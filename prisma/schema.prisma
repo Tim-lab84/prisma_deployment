@@ -17,6 +17,7 @@ model Book {
   id        String   @id @default(cuid())
   title     String
   year      Int
+  numberOfPages Int?
   summary   String?
   quantity  Int      @default(0)
   genre     String[]
